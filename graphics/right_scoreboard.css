@@ -1,0 +1,96 @@
+body {
+	font-family: Staatliches, sans-serif;
+	background: black;
+}
+
+#scoreboard {
+	display: flex;
+	position: absolute;
+	top: 10px;
+	left: 75%;
+	margin-left: -210px;
+}
+
+#scoreboardBigAxe {
+	display: flex;
+	position: absolute;
+	top: 70px;
+	left: 75%;
+	margin-left: -100px;
+}
+
+.score {
+	color: white;
+	font-size: 40px;
+
+	height: 60px;
+	width: 60px;
+
+	text-align: center;
+	line-height: 60px;
+}
+.scoreBigAxe {
+	color: white;
+	font-size: 30px;
+
+	height: 50px;
+	width: 50px;
+
+	text-align: center;
+	line-height: 50px;
+}
+
+#player2_throw1 {
+	background: #4b5884;
+	border-right: 4px solid white;
+	border-radius: 10% 0 0 10%;
+}
+
+#player2_throw2 {
+	background: #4b5884;
+	border-right: 4px solid white;
+	border-radius: 0 0 0 0;
+}
+
+#player2_throw3 {
+	background: #4b5884;
+	border-right: 4px solid white;
+	border-radius: 0 0 0 0;
+}
+
+#player2_throw4 {
+	background: #4b5884;
+	border-right: 4px solid white;
+	border-radius: 0 0 0 0;
+}
+
+#player2_throw5 {
+	background: #4b5884;
+	border-right: 4px solid white;
+	border-radius: 0 0 0 0;
+}
+
+#player2_total {
+	background: #4b5884;
+	border-radius: 0 10% 10% 0;
+}
+
+#player2BigAxeThrow1 {
+	background: #4b5884;
+	border-top: 4px solid black;
+	border-right: 4px solid white;
+	border-radius: 0 0 0 10%;
+}
+
+#player2BigAxeThrow2 {
+	background: #4b5884;
+	border-right: 4px solid white;
+	border-top: 4px solid black;
+	border-radius: 0 0 0 0;
+}
+
+#player2BigAxeThrow3 {
+	background: #4b5884;
+	border-top: 4px solid black;
+	border-radius: 0 0 10% 0;
+}

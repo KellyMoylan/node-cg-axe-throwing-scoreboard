@@ -1,0 +1,85 @@
+{
+  "name": "axe-throwing-streaming",
+  "version": "0.0.0",
+  "files": [
+    "dashboard",
+    "graphics",
+    "extension.js",
+    "extension"
+  ],
+  "keywords": [
+    "",
+    "nodecg-bundle"
+  ],
+  "nodecg": {
+    "compatibleRange": "^1.1.1",
+    "dashboardPanels": [
+      {
+        "name": "left_score",
+        "title": "Left Score",
+        "width": 3,
+        "file": "left_score.html",
+        "headerColor": "#525F78"
+      },
+      {
+        "name": "right_score",
+        "title": "Right Score",
+        "width": 3,
+        "file": "right_score.html",
+        "headerColor": "#525F78"
+      },
+      {
+        "name": "player_names",
+        "title": "Player Names",
+        "width": 4,
+        "file": "player_names.html",
+        "headerColor": "#525F78"
+      },
+      {
+        "name": "overall_games",
+        "title": "Overall Games",
+        "width": 4,
+        "file": "overall_games.html",
+        "headerColor": "#525F78"
+      },
+      {
+        "name": "left_score_big_axe",
+        "title": "Left Big Axe",
+        "width": 3,
+        "file": "left_score_big_axe.html",
+        "headerColor": "#525F78"
+      },
+      {
+        "name": "right_score_big_axe",
+        "title": "Right Big Axe",
+        "width": 3,
+        "file": "right_score_big_axe.html",
+        "headerColor": "#525F78"
+      }
+    ],
+    "graphics": [
+      {
+        "file": "left_scoreboard.html",
+        "width": 1920,
+        "height": 1080
+      },
+      {
+        "file": "right_scoreboard.html",
+        "width": 1920,
+        "height": 1080
+      },
+      {
+        "file": "player_names.html",
+        "width": 1920,
+        "height": 1080
+      },
+      {
+        "file": "overall_score_board.html",
+        "width": 1920,
+        "height": 1080
+      }
+    ]
+  },
+  "dependencies": {
+  }
+}

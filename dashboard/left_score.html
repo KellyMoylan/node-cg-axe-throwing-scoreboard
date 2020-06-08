@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+</head>
+<style>
+.grid-container {
+  display: grid;
+	grid-gap: 5px 5px;
+  grid-template-columns: auto auto auto auto auto;
+  background-color: #525F78;
+}
+.button {
+  background-color: #000000;
+  border: none;
+  color: white;
+  padding: 10px 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+.grid-item {
+  background-color: rgba(255, 255, 255, 0);
+  border: 1px solid rgba(0, 0, 0, 0);
+  font-size: 14px;
+  text-align: center;
+  color: white;
+  font-style: bold;
+}
+.throw_display {
+  background-color: #000000;
+  color: white;
+  padding: 10px 5px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+.button-clutch {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 10px 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+</style>
+</head>
+<body>
+
+<div class="grid-container">
+    <div class="grid-item">Throw 1</div>
+    <div class="grid-item">Throw 2</div>
+    <div class="grid-item">Throw 3</div>
+    <div class="grid-item">Throw 4</div>
+    <div class="grid-item">Throw 5</div>
+
+    <div class="grid-item"><button class="button" onclick="left_throw1(5)">5</button></div>
+    <div class="grid-item"><button class="button" onclick="left_throw2(5)">5</button></div>
+    <div class="grid-item"><button class="button" onclick="left_throw3(5)">5</button></div>
+    <div class="grid-item"><button class="button" onclick="left_throw4(5)">5</button></div>
+    <div class="grid-item"><button class="button" onclick="left_throw5(5)">5</button></div>
+
+    <div class="grid-item"><button class="button" onclick="left_throw1(3)">3</button></div>
+    <div class="grid-item"><button class="button" onclick="left_throw2(3)">3</button></div>
+    <div class="grid-item"><button class="button" onclick="left_throw3(3)">3</button></div>
+    <div class="grid-item"><button class="button" onclick="left_throw4(3)">3</button></div>
+    <div class="grid-item"><button class="button" onclick="left_throw5(3)">3</button></div>
+
+    <div class="grid-item"><button class="button" onclick="left_throw1('D')">D</button></div>
+    <div class="grid-item"><button class="button" onclick="left_throw2('D')">D</button></div>
+    <div class="grid-item"><button class="button" onclick="left_throw3('D')">D</button></div>
+    <div class="grid-item"><button class="button" onclick="left_throw4('D')">D</button></div>
+    <div class="grid-item"><button class="button" onclick="left_throw5('D')">D</button></div>
+
+    <div class="grid-item"><button class="button" onclick="left_throw1(0)">0</button></div>
+    <div class="grid-item"><button class="button" onclick="left_throw2(0)">0</button></div>
+    <div class="grid-item"><button class="button" onclick="left_throw3(0)">0</button></div>
+    <div class="grid-item"><button class="button" onclick="left_throw4(0)">0</button></div>
+    <div class="grid-item"><button class="button" onclick="left_throw5(0)">0</button></div>
+
+    <div class="grid-item"><button class="button" onclick="left_throw1(1)">1</button></div>
+    <div class="grid-item"><button class="button" onclick="left_throw2(1)">1</button></div>
+    <div class="grid-item"><button class="button" onclick="left_throw3(1)">1</button></div>
+    <div class="grid-item"><button class="button" onclick="left_throw4(1)">1</button></div>
+    <div class="grid-item"><button class="button" onclick="left_throw5(1)">1</button></div>
+
+    <div class="grid-item"></div>
+    <div class="grid-item"></div>
+    <div class="grid-item"></div>
+    <div class="grid-item"></div>
+    <div class="grid-item"><button class="button-clutch" onclick="left_throw5(7)">7</button></div>
+
+    <div class="throw_display" id="player_1_throw_1_display">-</div>
+    <div class="throw_display" id="player_1_throw_2_display">-</div>
+    <div class="throw_display" id="player_1_throw_3_display">-</div>
+    <div class="throw_display" id="player_1_throw_4_display">-</div>
+    <div class="throw_display" id="player_1_throw_5_display">-</div>
+
+</div>
+
+<div>
+<button class="button" onclick="reset_left()">RESET</button>
+<button class="button-clutch" onclick="clutch_call_left()">CLUTCH CALL</button>
+</div>
+
+<script src="left_score.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Name</title>
+  <script src="https://unpkg.com/vue"></script>
+  <script src="https://unpkg.com/vue-select@latest"></script>
+  <link rel="stylesheet" href="https://unpkg.com/vue-select@latest/dist/vue-select.css">
+</head>
+<style>
+.grid-container {
+  display: grid;
+  grid-gap: 10px 20px;
+  grid-template-columns: auto auto auto auto;
+  /*background-color: #FFFFFF;*/
+  /*background-color: #525F78;*/
+}
+.leftClubLogo{
+
+}
+.button {
+	background-color: #000000;
+	border: none;
+	color: white;
+	padding: 10px 15px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	margin: 4px 2px;
+	cursor: pointer;
+}
+
+body {
+  font-family: 'Source Sans Pro', 'Helvetica Neue', Arial, sans-serif;
+}
+
+h1 {
+  font-size: 26px;
+  font-weight: 600;
+  color: #2c3e5099;
+  text-rendering: optimizelegibility;
+
+}
+
+#app {
+  max-width: 30em;
+  margin: 1em auto;
+}
+
+</style>
+<body>
+
+    <div class="grid-container">
+
+        <label for="leftClubDropdown"> Player 1</label>
+        <div id="leftClubDropdown">
+            <select id="leftClubLogo" v-model="selected">
+              <option v-for="option in options" v-bind:value="option.value">
+                {{ option.text }}
+              </option>
+            </select>
+        </div>
+
+        <label for="rightClubDropdown"> Player 2</label>
+        <div id="rightClubDropdown">
+            <select id="rightClubLogo" v-model="selected" >
+              <option v-for="option in options" v-bind:value="option.value">
+                {{ option.text }}
+              </option>
+            </select>
+        </div>
+
+    </div>
+
+<!--     <div class="grid-container">
+
+        <label for="leftClubDropdown"> Player 1</label>
+        <div id="leftClubDropdown">
+            <v-select v-model="selected" :value="selected" id="leftClubLogo" label="text" :options="options">
+            </v-select>
+        </div>
+
+        <label for="rightClubDropdown"> Player 2</label>
+        <div id="rightClubDropdown">
+            <v-select v-model="selected" :value="selected" id="rightClubLogo" label="text" :options="options">
+            </v-select>
+        </div>
+
+    </div> -->
+<!--     <script>
+        new Vue({
+          el: '#leftClubDropdown',
+          data: {
+            selected: '',
+            options: [
+              { text: 'Choppers Hatchet House', value: 'img/chh.svg' },
+              { text: 'Urban Axes', value: 'img/ua.svg' },
+              { text: 'BATL', value: 'img/batl.svg' },
+              { text: 'PAX', value: 'img/pax.svg' },
+              { text: 'Rage', value: 'img/rage.svg' },
+              { text: 'Half Axe', value: 'img/ha.svg' }
+            ]
+          }
+        })
+    </script>
+
+    <script>
+        new Vue({
+          el: '#rightClubDropdown',
+          data: {
+            selected: '',
+            options: [
+              { text: 'Choppers Hatchet House', value: 'img/chh.svg' },
+              { text: 'Urban Axes', value: 'img/ua.svg' },
+              { text: 'BATL', value: 'img/batl.svg' },
+              { text: 'PAX', value: 'img/pax.svg' },
+              { text: 'Rage', value: 'img/rage.svg' },
+              { text: 'Half Axe', value: 'img/ha.svg' }
+            ]
+          }
+        })
+    </script> -->
+
+    <script>
+        // Vue.component('v-select', VueSelect.VueSelect)
+        new Vue({
+          el: '#leftClubDropdown',
+          data: {
+            selected: '',
+            options: [
+              { text: 'Mike Kump', value: ['Mike Kump', 'Philadelphia', 'ua', 'pa'] },
+              { text: 'Mike Grill', value: ['Mike Grill', 'Cherry Hill', 'chh', 'nj'] },
+              { text: 'Julio Romero', value: ['Julio Romero', 'Toronto', 'batl', 'on'] },
+              { text: 'Marcus Brown', value: ['Marcus Brown', 'Detroit', 'det', 'mi'] },
+              { text: 'Max Machado', value: ['Max Machado', 'Montreal', 'rage', 'qc'] },
+              { text: 'Straun Riley', value: ['Straun Riley', 'Scottsdale', 'batl', 'az'] },
+              { text: 'James Gregg', value: ['James Gregg', 'Austin', 'ua', 'tx'] },
+              { text: 'Shane Shep', value: ['Shane Shep', 'Boston', 'ha', 'ma'] },
+              { text: 'Ken Smith', value: ['Ken Smith', 'Peterbrough', 'pax', 'on'] },
+              { text: 'Carly Chalom', value: ['Carly Chalom', 'Los Angelas', 'laax', 'ca'] },
+              { text: 'John Bradley', value: ['John Bradley', 'Philadelphia', 'chh', 'pa'] },
+              { text: 'Stefan Cavacciuti', value: ['Stefan Cavacciuti', 'Ottawa', 'batl', 'on'] }
+            ]
+          }
+        })
+    </script>
+
+    <script>
+        // Vue.component('v-select', VueSelect.VueSelect)
+        new Vue({
+          el: '#rightClubDropdown',
+          data: {
+            selected: '',
+            options: [
+             { text: 'Mike Kump', value: ['Mike Kump', 'Philadelphia', 'ua', 'pa'] },
+              { text: 'Mike Grill', value: ['Mike Grill', 'Cherry Hill', 'chh', 'nj'] },
+              { text: 'Julio Romero', value: ['Julio Romero', 'Toronto', 'batl', 'on'] },
+              { text: 'Marcus Brown', value: ['Marcus Brown', 'Detroit', 'det', 'mi'] },
+              { text: 'Max Machado', value: ['Max Machado', 'Montreal', 'rage', 'qc'] },
+              { text: 'Straun Riley', value: ['Straun Riley', 'Scottsdale', 'batl', 'az'] },
+              { text: 'James Gregg', value: ['James Gregg', 'Austin', 'ua', 'tx'] },
+              { text: 'Shane Shep', value: ['Shane Shep', 'Boston', 'ha', 'ma'] },
+              { text: 'Ken Smith', value: ['Ken Smith', 'Peterbrough', 'pax', 'on'] },
+              { text: 'Carly Chalom', value: ['Carly Chalom', 'Los Angelas', 'laax', 'ca'] },
+              { text: 'John Bradley', value: ['John Bradley', 'Philadelphia', 'chh', 'pa'] },
+              { text: 'Stefan Cavacciuti', value: ['Stefan Cavacciuti', 'Ottawa', 'batl', 'on'] }
+            ]
+          }
+        })
+    </script>
+
+    <div>
+        <button class="button" onclick="update()">UPDATE</button>
+    </div>
+
+    <div>
+        <textarea id="testarea"></textarea>
+    </div>
+	<script src="player_names.js"></script>
+</body>
+</html>

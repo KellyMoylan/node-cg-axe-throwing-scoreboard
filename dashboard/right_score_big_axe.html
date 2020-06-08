@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+</head>
+<style>
+.grid-container {
+  display: grid;
+	grid-gap: 5px 5px;
+  grid-template-columns: auto auto auto auto auto auto;
+  background-color: #525F78;
+}
+.button {
+  background-color: #000000;
+  border: none;
+  color: white;
+  padding: 10px 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+.grid-item {
+  background-color: rgba(255, 255, 255, 0);
+  border: 1px solid rgba(0, 0, 0, 0);
+  font-size: 14px;
+  text-align: center;
+  color: white;
+  font-style: bold;
+}
+.throwDisplay {
+  background-color: #000000;
+  color: white;
+  padding: 10px 5px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+.button-clutch {
+	background-color: #4CAF50;
+	border: none;
+	color: white;
+	padding: 10px 15px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	margin: 4px 2px;
+	cursor: pointer;
+}
+</style>
+</head>
+<body>
+
+<div class="grid-container">
+
+    <div class="grid-item"><button class="button" onclick="bigAxeThrow(5)">5</button></div>
+    <div class="grid-item"><button class="button" onclick="bigAxeThrow(3)">3</button></div>
+    <div class="grid-item"><button class="button" onclick="bigAxeThrow(0)">0</button></div>
+    <div class="grid-item"><button class="button" onclick="bigAxeThrow('D')">D</button></div>
+    <div class="grid-item"><button class="button" onclick="bigAxeThrow(1)">1</button></div>
+	<div class="grid-item"><button class="button-clutch" onclick="bigAxeThrow(7)">7</button></div>
+
+    <div class="throwDisplay" id="player2ThrowDisplay">-</div>
+
+</div>
+
+<div>
+<button class="button" onclick="lockThrow()">LOCK THROW</button>
+</div>
+
+<script src="right_score_big_axe.js"></script>
+
+</body>
+</html>
